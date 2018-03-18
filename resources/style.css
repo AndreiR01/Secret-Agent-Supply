@@ -1,0 +1,172 @@
+html,body {
+  font-size: 18px;
+  font-family:Helvetica;
+}
+.container {
+  max-width:960px;
+  margin:0px auto;
+}
+header {
+    color: white;
+    background-color: black;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+}
+header img {
+  height: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right:1rem;
+}
+.container span {
+  font-size: 1rem;
+}
+.main-banner {
+    height: 25em;
+    background: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg") center center / cover no-repeat;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.headline {
+  background-color: black;
+  color: white;
+  width: 20em;
+  position: relative;
+  top: 9em;
+  padding: 2em 3em;
+}
+.headline h4 {
+  font-size:1rem;
+  font-weight:bold;
+}
+.headline h1 {
+  font-size:2rem;
+  font-weight:bold;
+  padding-top:0.25rem;
+    line-height: 1.2em;
+}
+
+.products, .business-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 3em 0 0 0;
+}
+nav {
+  background-color: firebrick;
+  color: white;
+
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75em 0px;
+        list-style: none;
+}
+.mobile-nav {
+    display: none;
+}
+@media only screen and (max-width: 1024px){
+ .mobile-nav {
+    display: block;
+    text-align: center;
+  }
+ .laptop-nav {
+   display: none;
+ }
+}
+
+.product {
+    width:30%;
+}
+.product-image {
+      border: 4px solid black;
+      padding: 2em 0;
+      height: 9em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.product-image img {
+    max-width:8em;
+}
+
+.description {
+    display: block;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 0.5em;
+}
+@media only screen and (max-width:1024px){
+  .glasses {
+    display: none;
+  }
+  .product {
+    width: 47%;
+  }
+}
+
+.info {
+  width: 35%;
+}
+.info .title {
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 1em 2em;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 5em 0;
+    margin-top: 4em;
+}
+footer div {
+  display: block;
+}
+@media only screen and (max-width:480px){
+  .product.watch, .product.glasses {
+      display: none;
+  }
+.info  {
+    width:90%;
+    margin:0.5em auto;
+  }
+  .products, .business-info {
+    flex-wrap: wrap;
+  }
+  .product {
+    width: 90%;
+
+  }
+  .products {
+    justify-content: center;
+  }
+ footer div {
+   text-align: center;
+ }
+ .headline {
+   background-color: black;
+   color: white;
+   position: relative;
+   top: 10em;
+   padding: 1rem 2rem;
+ }
+ .headline h4 {
+   font-size:0.77rem;
+   font-weight:bold;
+ }
+ .headline h1 {
+   font-size:1rem;
+   font-weight:bold;
+ }
+ .main-banner {
+   height: 15rem;
+ }
+}
