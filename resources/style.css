@@ -130,7 +130,9 @@ footer {
 footer div {
   display: block;
 }
-@media only screen and (max-width:470px){
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px) {
   .product.watch, .product.glasses {
       display: none;
   }
