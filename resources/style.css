@@ -173,3 +173,48 @@ and (max-device-width : 736px)
    height: 15rem;
  }
 }
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px){
+  .product.watch, .product.glasses {
+      display: none;
+  }
+.info  {
+    width:90%;
+    margin:0.5em auto;
+  }
+  .products, .business-info {
+    flex-wrap: wrap;
+  }
+  .product {
+    width: 90%;
+
+  }
+  .products {
+    justify-content: center;
+  }
+ footer div {
+   text-align: center;
+ }
+ .headline {
+   background-color: black;
+   color: white;
+   position: relative;
+   top: 10em;
+   padding: 1rem 2rem;
+ }
+ .headline h4 {
+   font-size:0.77rem;
+   font-weight:bold;
+ }
+ .headline h1 {
+   font-size:1rem;
+   font-weight:bold;
+ }
+ .main-banner {
+   height: 15rem;
+ }
+
+
+
+}
